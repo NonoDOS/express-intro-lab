@@ -14,9 +14,15 @@
     <ul>
         <% dogs.forEach(dog => { %>
            <li>
+            <%= dog.name %> 
+                -
             <%= dog.text %>
                 -
             <%= dog.done? "done" : "not done" %>
+                -
+            <%= dog.color %>
+                - 
+            <%= dog.gender %> 
             </li>
         <% }) %>
     </ul>
